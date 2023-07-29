@@ -368,6 +368,10 @@ button{
     font-size: 20px;
     color: white;
 }
+.calcButton:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
 .buyNowBTN{
     height: 150px;
     width: 280px;
