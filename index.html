@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Converter</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <script defer src="script/main.js"></script>
+    <div class="background">
+      <div class="product">
+        <div class="productSection">
+          <div class="card">
+            <div class="pic1"></div>
+            <div class="name">Green Apple</div>
+            <div class="price">
+              <i
+                class="fa-solid fa-peso-sign fa-bounce"
+                style="color: #00060f"
+              ></i>
+              200/Kilo
+            </div>
+            <form action="#" method="#">
+              <label for="howMany">Order:</label>
+              <input
+                type="number"
+                name="howMany"
+                id="howManyG"
+                min="0"
+                value="0"
+              />
+            </form>
+          </div>
+          <div class="card">
+            <div class="pic2"></div>
+            <div class="name">Banana</div>
+            <div class="price">
+              <i
+                class="fa-solid fa-peso-sign fa-bounce"
+                style="color: #00060f"
+              ></i>
+              160/Kilo
+            </div>
+            <form action="#" method="#">
+              <label for="howMany">Order:</label>
+              <input
+                type="number"
+                name="howMany"
+                id="howManyB"
+                min="0"
+                value="0"
+              />
+            </form>
+          </div>
+          <div class="card">
+            <div class="pic3"></div>
+            <div class="name">Grapes</div>
+            <div class="price">
+              <i
+                class="fa-solid fa-peso-sign fa-bounce"
+                style="color: #00060f"
+              ></i>
+              230/Kilo
+            </div>
+            <form action="#" method="#">
+              <label for="howMany">Order:</label>
+              <input
+                type="number"
+                name="howMany"
+                id="howManyGr"
+                min="0"
+                value="0"
+              />
+            </form>
+          </div>
+          <div class="card">
+            <div class="pic4"></div>
+            <div class="name">Orange</div>
+            <div class="price">
+              <i
+                class="fa-solid fa-peso-sign fa-bounce"
+                style="color: #00060f"
+              ></i>
+              200/Kilo
+            </div>
+            <form action="#" method="#">
+              <label for="howMany">Order:</label>
+              <input
+                type="number"
+                name="howMany"
+                id="howManyO"
+                min="0"
+                value="0"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="counter">
+          <div class="orderNumber">
+            <div class="orderproduct">Your Order:</div>
+            <div class="productlist">
+              <div class="list">
+                <div class="fruitsG">Green Apple</div>
+                <div class="fruitsB">Banana</div>
+                <div class="fruitsGr">Grapes</div>
+                <div class="fruitsO">Orange</div>
+              </div>
+              <div class="fruitNumber">
+                <div class="totalnumberG">
+                  <p id="totG"></p>
+                </div>
+                <div class="totalnumberB">
+                  <p id="totB"></p>
+                </div>
+                <div class="totalnumberGr">
+                  <p id="totGr"></p>
+                </div>
+                <div class="totalnumberO">
+                  <p id="totO"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="currency">
+            <div class="peso">
+              <p id="pesoAll"></p>
+            </div>
+            <div class="pesoConvert">
+              <div class="USD">
+                <i class="fa-solid fa-dollar-sign fa-bounce"></i>USD
+              </div>
+              <div class="WON">
+                <i class="fa-solid fa-won-sign fa-bounce"></i>WON
+              </div>
+              <div class="YEN">
+                <i class="fa-solid fa-yen-sign fa-bounce"></i>YEN
+              </div>
+            </div>
+            <div class="convertAmmount">
+              <div class="usd1">
+                <p id="usdC"></p>
+              </div>
+              <div class="won1">
+                <p id="KwonC"></p>
+              </div>
+              <div class="yen1">
+                <p id="YenC"></p>
+              </div>
+            </div>
+          </div>
+          <div class="buyNow">
+            <div class="calc">
+              <button onclick="calculate()">Calculate</button>
+            </div>
+            <div class="buyNowBTN">
+              <button class="buy" onclick="window.location.reload(); thanks()">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/3c4a05636b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
